@@ -1,10 +1,17 @@
 # Map of Garibaldi Provincial Park Hike
 
-Add GPS data to a map and add photos taken along the route at the exact location they were taken.
+The goal is to combine the hike route that was recorded using [mapmyride](http://www.mapmyride.com/my_home/#user_dashboard) and photos that were taken throughout the hike and display it onto an [Esri Leaflet](https://github.com/Esri/esri-leaflet) map.
 
-1. Take GPS points from hike and add them to a map.
-2. Add photos to exact GPS point where they were taken.
-3. View as pins and open pop-up with photo once clicked.
+Photos taken with an iPhone record latitude, longitude, and altitude (among other data points) that can be viewed through their EXIF data.
+
+
+1. Export GPS points from mapmyride.
+2. Convert to GPX.
+3. Export latitude and longitude points from photos.
+4. Join lat/long to photo JPEG.
+5. Use [leaflet-omnivore](https://github.com/mapbox/leaflet-omnivore) to convert GPX to GeoJSON and add to [Esri Leaflet](https://github.com/Esri/esri-leaflet).
+6. Add photos to exact point where they were taken on the hike.
+7. View as pins and open pop-up with photo once clicked.
 
 # Tools
 
