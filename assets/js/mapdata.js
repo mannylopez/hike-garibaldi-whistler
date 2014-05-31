@@ -1,6 +1,6 @@
 var map = L.map('map').setView([50.036693, -122.970884], 13);
 
-L.esri.basemapLayer('Imagery').addTo(map);
+L.esri.basemapLayer('Topographic').addTo(map);
 
 var trailFeatures = omnivore.gpx('assets/data/hike.gpx').addTo(map);
 
